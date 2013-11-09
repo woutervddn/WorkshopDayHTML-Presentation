@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>HTML / CSS</h1>
+					<h3>HTML Made Easy</h3>
+					<p>
+						<small>By <a href="http://wouter.vandenneucker.be">Wouter Vandenneucker</a> / <a href="http://twitter.com/woutervddn">@woutervddn</a></small>
+					</p>
+				</section>
+				<section data-markdown>
+					##Overzicht
+					
+					- Algemene info
+					- Doel van workshops
+					- History
+					- HTML4 en CSS
+					- HTML5 en CSS3
+					- Eigen template maken
+				</section>
+				<section data-markdown>
+					##Algemene info
+				</section>
+				<section>
+					<img src="img/TheSocialNetwork.png">
+				</section>
+				<section data-markdown>
+					##Wie?
+					
+					- Wouter: w@vdnkr.be
+					- Berend: online@visionsandviews.net
+				</section>
+				<section data-markdown>
+					##Meevolgen
+					- http://vdnkr.be/html
+				</section>
+				<section data-markdown>
+					##Doel
+				</section>
+				<section data-markdown>
+					##History
+				</section>
+				<section data-markdown>
+					- Internet en WWW
+					- Server <> Client
+				</section>
+				<section data-markdown>
+					###Statische pagina's
+					![HTML zonder CSS](img/cssSeasons_noFormat.png)
+					
+					- Academische papers
+					- enkel delen van informatie
+				</section>
+				<section data-markdown>
+					###Slimme, dynamische pagina's
+					- Servertalen
+					- later ook client talen
+				</section>
+				<section>
+					<pre><code data-trim contenteditable>
+					//PHP
+....
+$gebruikersnaam="John Doe";
+echo "<h1>";
+echo "welkom, " + $gebruikersnaam;
+echo "</h1>";
+....
+					</code></pre>
+					
+					<pre><code data-trim contenteditable>
+					<!--HTML-->
+<h1>welkom, John Doe</h1>
+					</code></pre>
+					
+					<h2>Wekom, John Doe</h2>
+
+				</section>
+				
+				<section data-markdown>
+					- Meer stijl dan enkel achtergronden en tekstkleuren
+					- Geboorte van CSS
+					- Cascading Style Sheets
+				</section>
+				<section data-markdown>
+					###Dynamische pagina's met stijl
+					![90s website](img/apple.jpg)
+				</section>
+				
+				<section data-markdown>
+					- basis gebleven
+					- mooier geheel, betere structuur en regels
+					- Geboorte HTML5 en CSS3
+					- Oude browsers = doorn in het oog
+				</section>
+				
+				<section data-markdown>
+					##HTML en CSS
+					
+					- HTML = voor structuur
+					- CSS = voor design/stijl
+				</section>
+				<section>
+					<li>basis website</li>
+					<pre><code data-trim contenteditable>
+
+< !DOCTYPE html >
+< html >
+    < head >	
+        <meta charset="utf-8">
+        <title>Titel</title>
+        <meta name="description" content="">
+
+        <link rel="stylesheet" href="css/mijnstijl.css">
+        <script src="js/mijnJavascript.js"></script>
+    < /head >
+    < body >
+
+        <p>Welkom, John Doe</p>
+
+        <script src="js/meerJavascript.js"></script>
+    < /body >
+< /html >
+					</code></pre>
+				</section>
+				<section data-markdown>
+					##Open favoriete website
+				</section>
+
+				<section>
+					<a href="http://www.simplehtmlguide.com/cheatsheet.php">http://www.simplehtmlguide.com/cheatsheet.php</a>
+					<a href="http://github.com/brixel/TheSocialNetwork">http://github.com/brixel/TheSocialNetwork</a>
+				</section>
+				<section>
+					<img src="img/TheSocialNetwork.png">
+				</section>
+				<section>
+					<textarea style="width: 900px; height: 700px; font-size: 0.7em;"></textarea>
+				</section>
+				<section data-markdown>
+					##En nu de CSS
+					- Wie wil spieken:
+					
+						- [simpele css](https://github.com/Brixel/TheSocialNetwork/blob/master/html%2BgeneralCSS/css/main.css)
+						- [uitgebreide css](https://github.com/Brixel/TheSocialNetwork/blob/master/html%2BextendedCSS/css/main.css)
+						- [volledige css](https://github.com/Brixel/TheSocialNetwork/blob/master/html%2BstyledCSS/css/main.css)
+					
+					- Cheatsheet:
+						- http://www.lesliefranke.com/files/reference/csscheatsheet.html
+				</section>
+				<section>
+					##Extra
+					- HTML5 heeft nog meer specifieke < tags >
+						- http://www.w3schools.com/html/html5_new_elements.asp
+					
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
